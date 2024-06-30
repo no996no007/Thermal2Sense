@@ -54,7 +54,7 @@ python app.py
 
 ## ⏬ Model weights
 
-The parameters of the IPAdapter and Controlnet we trained for the T2V task can be downloaded from the following link：[Baidu Netdisk](https://pan.baidu.com/s/1NAVmH8S7Ls5rZc-snDk1Ng?pwd=nsh6).
+The parameters of the IPAdapter and Controlnet we trained for the T2V task can be downloaded from the following link：[Baidu Netdisk](https://pan.baidu.com/s/1toBfPoF6b2-z_PYO8PpaaQ?pwd=ip7r).
 
 
 ## Acknowledgement
