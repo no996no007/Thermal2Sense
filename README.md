@@ -60,22 +60,9 @@ The pre-trained model parameters of the model can also be downloaded on [Google 
 
 
 ## Acknowledgement
-* Inspired from many excellent demos and repos, including [IPAdapter](https://github.com/tencent-ailab/IP-Adapter), [FastComposer](https://github.com/mit-han-lab/fastcomposer), [PhotoMaker](https://github.com/TencentARC/PhotoMaker), [InstantID](https://github.com/InstantID/InstantID). Thanks for their great work!
-* Thanks to the open source contributions of the following work: [face-parsing.PyTorch](https://github.com/zllrunning/face-parsing.PyTorch), [LLaVA](https://github.com/haotian-liu/LLaVA), [insightface](https://github.com/deepinsight/insightface), [FFHQ](https://github.com/NVlabs/ffhq-dataset), [CelebA](https://github.com/switchablenorms/CelebAMask-HQ), [SFHQ](https://github.com/SelfishGene/SFHQ-dataset).
-* 🤗 Thanks to the huggingface gradio team [ZeroGPUs](https://github.com/huggingface) for their free GPU support!
+* Inspired from many excellent demos and repos, including [IPAdapter](https://github.com/tencent-ailab/IP-Adapter), [ControlNet](https://github.com/lllyasviel/ControlNet). Thanks for their great work!
+* Thanks to the open source contributions of the following work: [LLaVA](https://github.com/haotian-liu/LLaVA). 
 
-## Disclaimer
-This project strives to impact the domain of AI-driven image generation positively. Users are granted the freedom to create images using this tool, but they are expected to comply with local laws and utilize it responsibly. The developers do not assume any responsibility for potential misuse by users.
 
-## Citation
-If you found this code helpful, please consider citing:
-~~~
-@article{huang2024consistentid,
-  title={ConsistentID: Portrait Generation with Multimodal Fine-Grained Identity Preserving},
-  author={Huang, Jiehui and Dong, Xiao and Song, Wenhui and Li, Hanhui and Zhou, Jun and Cheng, Yuhao and Liao, Shutao and Chen, Long and Yan, Yiqiang and Liao, Shengcai and others},
-  journal={arXiv preprint arXiv:2404.16771},
-  year={2024}
-}
-~~~
 
 
