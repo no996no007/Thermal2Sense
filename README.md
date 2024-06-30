@@ -13,14 +13,12 @@
 ## 🔥 **Examples**
 
 <p align="center">
-  <img src="https://github.com/JackAILab/ConsistentID/assets/135965025/f949a03d-bed2-4839-a995-7b451d8c981b" height=450>
+  <img src="https://github.com/no996no007/Thermal2Sense/assets/135965025/75e38c30-36cf-4509-bf70-84f3116086a5" height=250>
 </p>
 
 
 ## 🏷️ Introduce
-- [![Huggingface ConsistentID](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/JackAILab/ConsistentID)
-- [**ConsistentID Model Card**](https://huggingface.co/JackAILab/ConsistentID)
-  
+
 In the fields of security monitoring and autonomous driving, low-light conditions pose significant challenges to the performance of visual sensors. To mitigate this issue, this paper presents a method for converting infrared to visible light images called Thermal2Sense. The approach is based on the technical routes of diffusion models and Generative Adversarial Networks (GANs) and utilizes a two-stage inference process to optimize the quality of image reconstruction. In the first stage, Thermal2Sense employs a dedicated Controlnet module to reconstruct images with random noise input, ensuring structural consistency with the infrared image. The second stage additionally introduces an IP-Adapter module and Canny Controlnet, leveraging semantic knowledge from pre-trained models for semantic reconstruction at the detail level while maintaining overall structural and color control.
 
 ## 🔧 Requirements
@@ -30,57 +28,22 @@ In the fields of security monitoring and autonomous driving, low-light condition
 - cuda==11.8
 
 ```bash
-conda create --name ConsistentID python=3.8.10
-conda activate ConsistentID
+conda create --name Thermal2Sense python=3.8.10
+conda activate Thermal2Sense
 pip install -U pip
 
 # Install requirements
 pip install -r requirements.txt
 ```
 
-## 📦️ Data Preparation
-
-Prepare Data in the following format
-
-    ├── data
-    |   ├── JSON_all.json 
-    |   ├── resize_IMG # Imgaes 
-    |   ├── all_faceID  # FaceID
-    |   └── parsing_mask_IMG # Parsing Mask 
-
-The .json file should be like
-```
-[
-    {
-        "IMG": "Path of image...",
-        "parsing_mask_IMG": "...",
-        "vqa_llva": "...",
-        "id_embed_file_resize": "...",
-        "vqa_llva_facial": "..."
-    },
-    ...
-]
-```
-
-## 🚀 Train
-Ensure that the workspace is the root directory of the project.
-
-```setup
-bash train_bash.sh
-```
-
-## 🧪 Usage
-Ensure that the workspace is the root directory of the project. Then, run [convert_weights.py](https://github.com/JackAILab/ConsistentID/blob/main/evaluation/convert_weights.py) to save the weights efficiently.
-
 ### Infer
 ```setup
 python infer.py
 ```
 
-### Infer Inpaint & Inpaint Controlnet
+### Gradio Demo
 ```setup
-python -m demo.inpaint_demo
-python -m demo.controlnet_demo
+python app.py
 ```
 
 
