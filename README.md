@@ -20,6 +20,11 @@
 ## 🏷️ Introduce
 
 In the fields of security monitoring and autonomous driving, low-light conditions pose significant challenges to the performance of visual sensors. To mitigate this issue, this paper presents a method for converting infrared to visible light images called Thermal2Sense. The approach is based on the technical routes of diffusion models and Generative Adversarial Networks (GANs) and utilizes a two-stage inference process to optimize the quality of image reconstruction. In the first stage, Thermal2Sense employs a dedicated Controlnet module to reconstruct images with random noise input, ensuring structural consistency with the infrared image. The second stage additionally introduces an IP-Adapter module and Canny Controlnet, leveraging semantic knowledge from pre-trained models for semantic reconstruction at the detail level while maintaining overall structural and color control.
+<p align="center">
+  <img src="https://github.com/no996no007/Thermal2Sense/assets/135965025/b0abef6b-c629-4a9e-ba74-6a95df7d27f2" height=250>
+</p>
+
+
 
 ## 🔧 Requirements
 
